@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.1.xsd
+	">
+	       					
+	<context:annotation-config/>     
+	<!-- annotation auto-wired를 사용하기위해 추가 -->
+
+	<bean class="blog.controller.BlogController"/>
+	<!-- <bean id="BlogDAO" class="blog.dao.BlogDAOImpl"/> -->
+	 
+	<!-- <bean id="categoryBean" class="shop.dao.CategoryBeanImpl"/>
+	<bean class="shop.controller.ShopController"/>
+	<bean id="productBean" class="shop.dao.ProductBeanImpl"/>
+	<bean id="productList" class="shop.dao.ProductListImpl"/>
+	<bean id="cartbean" class="shop.dao.CartBean"/> -->
+
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+	<!--파일업로드를 위해 선언(commons.io랑 commons.fileupload jar파일 올리면 사용가능함) -->
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
